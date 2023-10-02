@@ -6,21 +6,22 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="./src/style.css">
-  <title>Vite + TS</title>
+  <title>Personajes de Mortadelo y Filemón</title>
 </head>
 
 <body>
   <div class="container">
     <header class="container-header">
-      <h1>Personajes de Mortadelo y Filemón</h1>
-      <section>
+      <h1 class="title">Personajes de Mortadelo y Filemón</h1>
+      <section class="search-header">
         <input type="text" id="search-character" class="character">
-        <button class="button">Filtrar</button>
+        <button class="button" id="btn-filter">Filtrar</button>
+      </section>
+      <section>
+        <p class="text-message" id="message"></p>
       </section>
     </header>
-    <main class="container-main" id="cards">
-
-    </main>
+    <section class="container-main" id="cards"></section>
   </div>
   <script type="module" src="/src/main.ts"></script>
 </body>
